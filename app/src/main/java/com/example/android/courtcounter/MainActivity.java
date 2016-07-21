@@ -75,7 +75,35 @@ public class MainActivity extends AppCompatActivity {
     {
         scoreA=0;
         scoreB=0;
-        displayForTeamA( scoreA);
-        displayForTeamB( scoreB);
+        displayForTeamA(scoreA);
+        displayForTeamB(scoreB);
     }
+    public void vs (View view)
+    {
+        String mm;
+        int a=scoreA;
+        int b=scoreB;
+       if(a==b)
+       {
+           print("They draw!");
+       }
+        else
+       {
+           if(a>b)
+           {
+               print("Team A wins!");
+           }
+           else
+           {
+               print("Team B wins!");
+           }
+       }
+    }
+
+    public void print(String a)
+    {
+        TextView vs_result = (TextView) findViewById(R.id.vs);
+        vs_result.setText(String.valueOf(a));
+    }
+
 }

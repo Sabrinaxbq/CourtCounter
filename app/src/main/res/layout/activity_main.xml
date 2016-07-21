@@ -30,6 +30,7 @@
             android:orientation="vertical"
             android:paddingLeft="24dp"
             android:paddingRight="24dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -40,7 +41,7 @@
                 android:text="Team A"
                 android:textColor="#616161"
                 android:textSize="14sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/team_a_score"
@@ -105,7 +106,7 @@
                 android:text="0"
                 android:textColor="#000000"
                 android:textSize="56sp"
-                android:textStyle="normal"/>
+                android:textStyle="normal" />
 
             <Button
                 android:layout_width="match_parent"
@@ -129,9 +130,18 @@
                 android:text="FREE THROW" />
         </LinearLayout>
     </LinearLayout>
-
+    <Button
+        android:id="@+id/vs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SplitLine_hor1"
+        android:layout_centerHorizontal="true"
+        android:onClick="vs"
+        android:textSize="45sp"
+        android:text="VS" />
 
     <Button
+        android:id="@+id/reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -139,7 +149,6 @@
         android:layout_margin="32dp"
         android:onClick="reset"
         android:text="RESET" />
-
 
 
 </RelativeLayout>
